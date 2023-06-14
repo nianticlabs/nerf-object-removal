@@ -1,0 +1,9 @@
+[submodule "external/Objectron"]
+	path = external/Objectron
+	url = https://github.com/google-research-datasets/Objectron.git
+[submodule "external/detectron2"]
+	path = external/detectron2
+	url = https://github.com/facebookresearch/detectron2.git
+[submodule "external/ARKitScenes"]
+	path = external/ARKitScenes
+	url = https://github.com/apple/ARKitScenes.git

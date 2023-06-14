@@ -1,0 +1,98 @@
+# Custom
+Config.data_dir = "/mnt/res_nas/silvanweder/datasets/object-removal-custom" #TODO: change that
+Config.checkpoint_dir = "/mnt/res_nas/silvanweder/experiments/object-removal-custom/synthetic-benchmark/default"
+Config.dataset_loader = 'custom'
+Config.llff_scan = 'room'
+Config.white_background = False
+Config.factor = 0
+Config.render_factor = 0
+Config.near = 0.1
+Config.far = 6.
+MipNerfModel.ray_shape = 'cylinder'
+MipNerfModel.use_viewdirs = False
+MLP.density_noise = 1.
+Config.batching = 'all_images'
+Config.batch_size = 2048
+Config.render_chunk_size = 2048
+Config.load_depth = True
+Config.load_masks = True
+Config.load_random_rays = False
+Config.train_render_every = 5000
+Config.filter_masks = False
+Config.n_input_views = 0 # 0 means all input views are used. Check datasets.py for reference
+Config.n_random_poses = 100
+Config.max_steps = 300000
+Config.check_grad_for_nans = True # seems to fix the NaN problem
+
+Config.train_list = '../transforms_train.json'
+Config.test_list = '../transforms_test.json'
+
+MipNerfModel.num_mlp_model_heads = 2
+
+Config.batch_size_random = 2048
+
+Config.rgb_loss_mask = 'masked'
+Config.mask_path = 'masks_synthetic'
+Config.filter_invalid_masks = True
+
+Config.train_confidence = True
+Config.use_confidence_for_depth = True
+Config.filter_views_every = 50000
+Config.filter_view_conf = True
+Config.filter_threshold_percentile = 50
+Config.code_size = 2
+Config.reset_lr = False
+Config.confidence_lambda = 0.005
+Config.hard_filter = False
+Config.reset_variables = True
+Config.reset_variables_in_filter = True
+Config.reset_variables_th = 200001
+Config.filter_stop = 200000
+
+Config.train_depth = True
+Config.load_depth_confidence = True
+Config.load_inpainted_depth = True
+Config.filter_confidence = True
+Config.depth_loss_mask = 'all'
+Config.use_confidence_for_depth = True
+Config.inpainted_depth_path = '../lama_depth_output_synthetic'
+Config.depth_path = 'depth'
+
+Config.train_inpainting = True
+Config.load_inpainting = True
+Config.inpainting_path = '../lama_images_output_synthetic'
+Config.inpainting_loss_weight = 0.1
+Config.inpainting_sub_freq = 1
+
+Config.train_dist_reg = True
+Config.dist_reg_loss_weight = 0.01
+Config.dist_reg_mask_weight_ratio = 0.1
+
+MipNerfModel.view_uncertainty = False
+Config.view_uncertainty_code = False
+Config.train_uncertainty_inpainting = False
+
+MipNerfModel.mlp_model = 'semantic'
+
+Config.lr_init = 0.002
+Config.lr_final = 0.00002
+Config.lr_delay_steps = 512
+Config.lr_delay_mult = 0.01
+Config.grad_max_norm = 0.1
+Config.grad_max_val = 0.1
+
+Config.anneal_nearfar = False
+Config.anneal_nearfar_steps = 512
+Config.anneal_nearfar_perc = 0.0001
+Config.anneal_mid_perc = 1.0
+
+Config.depth_tvnorm_loss_mult = 0. # needs to be set like this to have no random rays
+Config.depth_tvnorm_decay = False # needs to be set like this to have no random rays
+Config.depth_tvnorm_maxstep = 512
+Config.depth_tvnorm_loss_mult_start = 400.0
+Config.depth_tvnorm_loss_mult_end = 0.1
+
+Config.flow_loss_mult = 0.0
+
+UncMLP.net_depth_alpha = 8
+
