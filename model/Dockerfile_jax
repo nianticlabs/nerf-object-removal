@@ -1,0 +1,22 @@
+FROM nvidia/cuda:11.4.0-cudnn8-devel-ubuntu20.04
+ARG DEBIAN_FRONTEND=noninteractive
+
+RUN apt update && apt install python3-pip -y
+RUN apt install python -y
+RUN apt install libgl1-mesa-glx -y
+
+RUN apt-get update
+RUN apt-get install ffmpeg libsm6 libxext6  -y
+RUN apt install python-is-python3 -y
+RUN pip install jax==0.3.16 jaxlib==0.3.15+cuda11.cudnn82 -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+
+COPY requirements_v2.txt /app/
+WORKDIR /app
+
+RUN pip install -r requirements_v2.txt
+RUN pip install flax==0.5.1
+ENV PYTHONPATH="/app:${PYTHONPATH}"
+
+RUN ln -s /usr/local/cuda /usr/local/cuda-11.4
+RUN XLA_FLAGS=--xla_gpu_cuda_data_dir=/usr/local/cuda-11.4
+
