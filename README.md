@@ -98,14 +98,12 @@ You van visualize the evaluation results using [this notebook](notebooks/vis_res
 If you find this work helpful, please consider citing
 
 ```
-@article{DBLP:journals/corr/abs-2212-11966,
-  author       = {Silvan Weder and
-                  Guillermo Garcia{-}Hernando and
-                  {\'{A}}ron Monszpart and
-                  Marc Pollefeys and
-                  Gabriel J. Brostow and
-                  Michael Firman and
-                  Sara Vicente},
-  title        = {Removing Objects From Neural Radiance Fields},
+@InProceedings{Weder_2023_CVPR,
+    author    = {Weder, Silvan and Garcia-Hernando, Guillermo and Monszpart, \'Aron and Pollefeys, Marc and Brostow, Gabriel J. and Firman, Michael and Vicente, Sara},
+    title     = {Removing Objects From Neural Radiance Fields},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {16528-16538}
 }
 ```
