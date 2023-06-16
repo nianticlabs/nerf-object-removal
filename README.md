@@ -4,9 +4,19 @@
   
 <sup>1</sup>Niantic <sup>2</sup>ETH Zürich <sup>3</sup>University College London
   
- </div>
+![teaser](./assets/teaser.png)
 
 
+
+
+
+[[Project Webpage](https://nianticlabs.github.io/nerf-object-removal/)]
+[[Paper](https://nianticlabs.github.io/nerf-object-removal/resources/RemovingObjectsFromNeRFs.pdf)]
+
+</div>
+<br><br>
+
+This code is for non-commercial use; please see the [license file](LICENSE) for terms.
 
 ## Installation
 
