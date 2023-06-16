@@ -1,8 +1,16 @@
-# ObjectRemoval
+<div align="center">
+<h1> Removing Objects from Neural Radiance Fields </h1>
+<a href="https://www.silvanweder.com">Silvan Weder</a><sup>1, 2</sup>, <a>Guillermo Garcia-Hernando</a><sup>2</sup>, <a >&Agraveron Monszpart</a><sup>2</sup>, <a >Marc Pollefeys</a><sup>2</sup>, <a>Gabriel Brostow</a><sup>1, 3</sup>,  <a >Michael Firman</a><sup>1</sup>  <a>Sara Vicente</a><sup>1</sup> 
+  
+<sup>1</sup>Niantic <sup>2</sup>ETH Zürich <sup>3</sup>University College London
+  
+ </div>
 
-An Nvidia GPU is required to run this code. It's been tested on Ubuntu 20.04.4 LTS.
+
 
 ## Installation
+
+An Nvidia GPU is required to run this code. It's been tested on Ubuntu 20.04.4 LTS.
 
 First, you need to clone this repo:
 
