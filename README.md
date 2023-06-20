@@ -6,10 +6,6 @@
   
 ![teaser](./assets/teaser.png)
 
-
-
-
-
 [[Project Webpage](https://nianticlabs.github.io/nerf-object-removal/)]
 [[Paper](https://nianticlabs.github.io/nerf-object-removal/resources/RemovingObjectsFromNeRFs.pdf)]
 
