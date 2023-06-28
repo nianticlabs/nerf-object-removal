@@ -1,0 +1,9 @@
+gin-config
+absl-py
+opencv-python
+oryx
+scikit-image
+dm-pix
+chex
+pyyaml
+tensorflow

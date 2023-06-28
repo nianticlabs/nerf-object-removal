@@ -40,7 +40,6 @@ Please the download the data from here using the following command:
 
 ```shell
 mkdir "$(pwd)/data"
-cd "$(pwd)/data"
 wget -P "$(pwd)/data" "https://storage.googleapis.com/niantic-lon-static/research/nerf-object-removal/nerf-object-removal.zip"
 unzip "$(pwd)/data/nerf-object-removal.zip" -d "$(pwd)/data"
 ```
@@ -61,7 +60,7 @@ or on the synthetic dataset with
 ```shell
 export SCENE_NUMBER="001"; \
 ROOT_DIR="$(pwd)/data/object-removal-custom-clean" \
-OUTPUT_DIR="$(pwd)/experiments/real" \
+OUTPUT_DIR="$(pwd)/experiments/synthetic" \
 bash ./run_synthetic.sh model/configs/custom_synthetic/default.gin "${SCENE_NUMBER}"
 ```
 
@@ -84,7 +83,7 @@ or the following command for a synthetic scene
 ```shell
 export SCENE_NUMBER="001"; \
 ROOT_DIR="$(pwd)/data/object-removal-custom-clean" \
-OUTPUT_DIR="$(pwd)/experiments/real" \
+OUTPUT_DIR="$(pwd)/experiments/synthetic" \
 bash ./test_synthetic.sh model/configs/custom_synthetic/default.gin "${SCENE_NUMBER}"
 ```
 
@@ -106,6 +105,10 @@ python eval.py --experiment "${EXPERIMENT_NAME}" --experiment_root_dir "${EXPERI
 ## Visualizing the evaluation results
 
 You van visualize the evaluation results using [this notebook](notebooks/vis_results.ipynb).
+
+## Running through Docker
+
+See [docker/README.md](docker/README.md).
 
 ## Citation
 
