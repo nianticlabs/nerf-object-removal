@@ -1,8 +1,16 @@
 <div align="center">
 <h1> Removing Objects from Neural Radiance Fields </h1>
-<a href="https://www.silvanweder.com">Silvan Weder</a><sup>1, 2</sup>, <a>Guillermo Garcia-Hernando</a><sup>2</sup>, <a href="http://aron.monszp.art">Áron Monszpart</a><sup>2</sup>, <a >Marc Pollefeys</a><sup>2</sup>, <a>Gabriel Brostow</a><sup>1, 3</sup>,  <a >Michael Firman</a><sup>1</sup>  <a>Sara Vicente</a><sup>1</sup> 
+<a href="https://www.silvanweder.com">Silvan Weder</a><sup>1, 2</sup>,
+<a href="https://guiggh.github.io">Guillermo Garcia-Hernando</a><sup>2</sup>,
+<a href="http://aron.monszp.art">Áron Monszpart</a><sup>2</sup>
+<a href="https://people.inf.ethz.ch/marc.pollefeys">Marc Pollefeys</a><sup>2</sup>,
+<a href="http://www0.cs.ucl.ac.uk/staff/g.brostow">Gabriel Brostow</a><sup>1, 3</sup>, <br/>
+<a href="http://www.michaelfirman.co.uk">Michael Firman</a><sup>1</sup>,
+<a href="https://scholar.google.com/citations?user=7wWsNNcAAAAJ">Sara Vicente</a><sup>1</sup> 
   
-<sup>1</sup><a href="https://research.nianticlabs.com/">Niantic</a> <sup>2</sup>ETH Zürich <sup>3</sup><a href="http://www0.cs.ucl.ac.uk/staff/g.brostow/#Research">University College London</a>
+<sup>1</sup><a href="https://research.nianticlabs.com/">Niantic</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<sup>2</sup><a href="https://cvg.ethz.ch/index.php">ETH Zürich</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<sup>3</sup><a href="http://www0.cs.ucl.ac.uk/staff/g.brostow/#Research">University College London</a>
   
 ![teaser](./assets/teaser.png)
 
