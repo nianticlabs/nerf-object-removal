@@ -186,7 +186,7 @@ def main(args):
                 elems = line.split(" ") # 1-4 is quat, 5-7 is trans, 9ff is filename (9, if filename contains no spaces)
                 name = '_'.join(elems[9:])
                 full_name = os.path.join(image_path, name)
-                rel_name = rel_path + full_name[len(os.path.join(args.data_path)) + 1:]
+                rel_name = rel_path + full_name[len(os.path.join(args.data_path)):] # +1 to remove the leading slash when working with relative paths
                 b = sharpness(full_name)
                 print(name, "sharpness =",b)
 

@@ -42,3 +42,5 @@ preprocessing/custom/notebooks/reconstruction.ipynb
 experiments
 preprocessing/*.ipynb
 tests
+external/lama/big-lama-v0/config.yaml
+model/configs/custom/default.gin.bak

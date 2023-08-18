@@ -33,6 +33,7 @@ git clone --recursive git@github.com:nianticlabs/nerf-object-removal.git
 ```
 
 In order to install this repository, run the following commands. You might need to adjust the CUDA and cudNN versions in [install.sh](install.sh).
+This installation is only tested on CUDA 11.1. With other versions it might not run due to JAX issues.
 
 ```shell
 conda create -n object-removal python=3.8
@@ -44,12 +45,23 @@ bash ./install.sh
 
 ## Download Dataset
 
-Please the download the data from here using the following command:
+Please download the data from here using the following command:
 
 ```shell
 mkdir "$(pwd)/data"
 wget -P "$(pwd)/data" "https://storage.googleapis.com/niantic-lon-static/research/nerf-object-removal/nerf-object-removal.zip"
 unzip "$(pwd)/data/nerf-object-removal.zip" -d "$(pwd)/data"
+```
+
+## Download Big Lama Model from HF
+
+Please download the pretrained Lama model from Hugging Face.
+
+```shell
+cd external/lama
+wget https://huggingface.co/smartywu/big-lama/resolve/main/big-lama.zip
+unzip big-lama.zip
+cd ../..
 ```
 
 ## Run End-to-end Optimization
