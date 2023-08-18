@@ -32,12 +32,12 @@ HOME_DIR="$(pwd)"
 # setup experiment folder and symlink raw data
 mkdir -p "${OUTPUT_DIR}/${SCENE}/data"
 cd "${OUTPUT_DIR}/${SCENE}/data"
-ln -s "${ROOT_DIR}/${SCENE}/"* .
+find "${ROOT_DIR}/${SCENE}" -maxdepth 1 ! -name "$(basename ${ROOT_DIR}/${SCENE})" -exec ln -s {} \;
 cd "${HOME_DIR}"
 
 # compute transforms files
 python preprocessing/convert_colmap_to_nerf.py \
-        --data_path "${OUTPUT_DIR}/${SCENE}/data" \
+        --data_path "${OUTPUT_DIR}/${SCENE}/data/" \
         --out ../transforms.json \
         --split
 

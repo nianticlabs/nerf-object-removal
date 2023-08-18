@@ -7,3 +7,7 @@ dm-pix
 chex
 pyyaml
 tensorflow
+open3d
+torchvision
+msgpack
+rich
