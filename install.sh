@@ -20,4 +20,4 @@ pip install flax==0.5.1 chex==0.1.5 optax==0.1.5 oryx==0.2.4 orbax==0.1.7 --no-d
 
 pip install tensorflow
 pip install numpy==1.23.1 # this is important that lama works
-
+pip install tensorflow_probability==0.20.1 # avoid type error
